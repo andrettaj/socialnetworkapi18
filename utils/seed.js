@@ -1,6 +1,6 @@
 const connection = require('../config/connection');
 const { Thought, User } = require('../models');
-const { getRandomName, getRandomAssignments } = require('./data');
+const { getRandomName, getRandomReactions } = require('./data');
 
 connection.on('error', (err) => err);
 
@@ -41,14 +41,14 @@ connection.once('open', async () => {
   await User.collection.insertMany(users);
 
   // Add courses to the collection and await the results
-  await Course.collection.insertOne({
-    courseName: 'UCLA',
+  await Thought.collection.insertOne({
+    thoughtName: 'UCLA',
     inPerson: false,
-    students: [...students],
+    users: [...users],
   });
 
   // Log out the seed data to indicate what should appear in the database
-  console.table(students);
+  console.table(users);
   console.info('Seeding complete! 🌱');
   process.exit(0);
 });

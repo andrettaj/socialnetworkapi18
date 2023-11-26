@@ -1,6 +1,6 @@
-# Module 18 Mini-Project: Student Statistics Back-End
+# The Social Network Project.
 
-In this activity, you will start with an existing codebase for a mostly complete application.
+This is a work in progress project.
 
 You will be adding aggregate methods to the `Student` controller to show a student's overall grade and the number of students.
 
