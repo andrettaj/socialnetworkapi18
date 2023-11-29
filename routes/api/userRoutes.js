@@ -14,10 +14,10 @@ router.route('/').get(getUsers).post(createUser);
 // /api/users/:userId
 router.route('/:userId').get(getSingleUser).delete(deleteUser);
 
-// /api/users/:userId/assignments
+// /api/users/:userId/reactions
 router.route('/:userId/reactions').post(addReaction);
 
-// /api/users/:usersId/assignments/:reactionId
+// /api/users/:usersId/reactions/:reactionId
 router.route('/:userId/reactions/:reactionId').delete(removeReaction);
 
 module.exports = router;
