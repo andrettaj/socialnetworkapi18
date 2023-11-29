@@ -1,6 +1,6 @@
 # The Social Network Project.                   
 
-This project is to build an API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list.  
+##This project is to build an API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list.  
 
 The purpose of this project is to learn several technologies that social networking platforms use in their full-stack applications.
 
